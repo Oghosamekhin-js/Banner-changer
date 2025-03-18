@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+/* NAV EDIT STARTS */
+nav ul{
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+.get{
+    padding: 0.5rem 2rem;
+    border-radius: 5rem;
+    background-color: rgb(172, 117, 15);
+    font-size: 1.5rem;
+}
+/* NAV EDIT ENDS */
+
 /* SECTION ONE EDIT STARTS */
 section.one{
     display: flex;
@@ -29,6 +52,10 @@ section.one{
 
 h1{
     font-size: 3rem;
+}
+
+p{
+    padding: 1rem 0;
 }
 
 h4{
