@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SECTION ONE EDIT STARTS */
+section.one{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh; 
+}
+
+.bannerBox img{
+    height: 50vh;
+    border-radius: 0.3rem;
+}
+
+.bannerBox{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 4rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.rice-sauce-txt{
+    display: none;
+}
+
+img{
+    display: block;
+}
+
+.active{
+    display: none;
+}
+/* SECTION ONE EDIT ENDS */
+
+
+/* CONTROL SECTION EDIT STARTS */
+
+section.controls{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20vh;
+    gap: 3rem;
+}
+
+button{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.1px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+/* CONTROL SECTION EDIT ENDS */
