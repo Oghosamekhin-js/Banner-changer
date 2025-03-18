@@ -74,3 +74,41 @@ button{
     border-color: #ffffff;
 }
 /* CONTROL SECTION EDIT ENDS */
+
+/* RESPONSIVE DESIGN */
+@media (max-width:415px) {
+    section.one{
+        height: 90vh; 
+    }
+
+    .bannerBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        gap: 2rem;
+        border-radius: 0.3rem;
+        text-align: center;
+        padding: 1.5rem;
+        border: none !important;
+    }
+
+    .bannerBox img{
+        height: 60vh;
+        border-radius: 0.3rem;
+        margin-top: -2rem;
+    }
+
+    h1{
+        width: 95vw;
+    }
+
+    /* CONTROL EDIT FOR RESPONSIVE DESIGN*/
+    section.controls{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 20vh;
+        gap: 1.2rem;
+    }
+}
