@@ -1,3 +1,54 @@
+// To change background color
+const changeBannerButton = document.querySelector(".banner"); 
+const background = document.querySelector(".bannerBox"); 
+
+changeBannerButton.addEventListener("click", function () {
+    const color = document.querySelector("#favcolor").value; 
+    background.style.backgroundColor = color; 
+});
+
+
+
+// To change texts
+document.addEventListener("DOMContentLoaded", function(){
+    const userInput = document.querySelector("#textField");
+    const displayText = document.getElementById("displayText");
+    const changeTextButton = document.querySelector(".text");
+    
+    changeTextButton.addEventListener("click", function(e){
+        e.preventDefault
+        if (userInput.value.trim() !== "") {
+            displayText.textContent = userInput.value;
+        } else {
+            alert("PLEASE ENTER TEXT!!");
+        }
+    })
+ })
+
+
+
+// To switch images
+const button = document.querySelector(".image");
+const displayPic = document.querySelector(".jollofPic"); 
+const picInput = document.querySelector("#inputPic");
+
+button.addEventListener("click", function() {
+
+    if (picInput.files && picInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            displayPic.src = e.target.result;
+        };
+
+        reader.readAsDataURL(picInput.files[0]);
+    } else {
+        alert("Please select a valid picture!");
+    }
+});
+
+
+
 // To trigger day/night mode
 const nightButton = document.querySelector(".day");
 const border = document.querySelector(".bannerBox");
@@ -8,50 +59,6 @@ nightButton.addEventListener("click", function() {
 
     if (document.body.classList.contains("dark-mode")) {
 
-        border.style.border="1px solid white";
-    } else {
-        border.style.border="1px solid black";
-    }
-});
-
-
-
-// To toggle the two image
-const button = document.querySelector(".image");
-const box2div = document.querySelectorAll(".box2 img");
-
-// Function to toggle images
-button.addEventListener("click", function() {
-
-    box2div.forEach((img) => {
-       img.classList.toggle("active");
-    });
-});
-
-
-
-// To toggle texts
-const textButton = document.querySelector(".text");
-const box1div = document.querySelectorAll(".box1 h4");
-
-// Function to toggle images
-textButton.addEventListener("click", function() {
-
-    box1div.forEach((txt) => {
-       txt.classList.toggle("rice-sauce-txt");
-    });
-});
-
-
-
-// To change background
-const changeBannerButton = document.querySelector(".banner");
-const background = document.querySelector(".bannerBox");
-
-changeBannerButton.addEventListener("click", function() {
-    background.classList.toggle("dark-mode");
-
-    if (background.classList.contains("dark-mode")) {
         border.style.border="1px solid white";
     } else {
         border.style.border="1px solid black";

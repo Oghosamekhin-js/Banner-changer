@@ -14,6 +14,12 @@ nav ul{
     font-size: 2rem;
 }
 
+.logo{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
 li a{
     color: white;
     text-decoration: none;
@@ -31,8 +37,7 @@ li a{
 section.one{
     display: flex;
     justify-content: center; 
-    align-items: center; 
-    height: 70vh; 
+    align-items: center;  
 }
 
 .bannerBox img{
@@ -42,12 +47,14 @@ section.one{
 
 .bannerBox{
     display: flex;
-    justify-content: center; 
+    justify-content: space-around; 
     align-items: center; 
-    gap: 2rem;
+    gap: 4rem;
     border: 1px solid black;
     border-radius: 0.3rem;
-    padding: 4rem;
+    padding: 3rem 0;
+    margin-top: 2rem;
+    width: 98vw;
 }
 
 h1{
@@ -95,10 +102,21 @@ button{
     background-color: white;
 }
 
+input{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.1px solid black;
+}
+
+section.controls div{
+    display: flex;
+    align-items: center;
+}
+
 .dark-mode {
     background-color: black;
     color: #ffffff;
-    border-color: #ffffff;
+    border-color: #ffffff; 
 }
 /* CONTROL SECTION EDIT ENDS */
 
@@ -118,6 +136,8 @@ button{
         text-align: center;
         padding: 1.5rem;
         border: none !important;
+        width: 100vw;
+        margin-top: 20rem;
     }
 
     .bannerBox img{
@@ -133,9 +153,11 @@ button{
     /* CONTROL EDIT FOR RESPONSIVE DESIGN*/
     section.controls{
         display: flex;
+        flex-direction: column;
         justify-content: center; 
-        align-items: center; 
-        height: 20vh;
-        gap: 1.2rem;
+        align-items: center;
+        width: 100vw;
+       margin-top: 25rem;
+        gap: 1.5rem;
     }
 }

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-rice-banner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li>Logo</li>
+                <li class="logo">Banner-Xnger</li>
 
                 <li class="get"><a href="#">Get started</a></li>
             </ul>
@@ -22,9 +25,9 @@
     <section class="one">
         <div class="bannerBox">
             <div class="box1">
-                <h1>Rice: The Real MVP?</h1>
+                <h1 class="change">Rice: The Real MVP?</h1>
 
-                <p>Rice is great, but it’s even better when turned into legendary dishes: <br>
+                <p id="displayText">Rice is great, but it’s even better when turned into legendary dishes: <br>
 
                     🔥 Jollof Rice – The spicy, tomato-packed West African icon that starts food wars.<br>
                     🥢 Fried Rice – Stir-fried, soy sauce goodness, perfect for leftovers.<br>
@@ -37,26 +40,31 @@
 
                     <h3>So, how do you like your rice?</h3>
             
-                <h4>As jollof rice</h4>
-
-                <h4 class="rice-sauce-txt">As rice and sauce</h4>
             </div>
             
             <div class="box2">
-                <img class="jollof active" src="Assets/images/jollof-rice.jpg" alt="jollof-image">
-
-                <img class="rice-sauce" src="Assets/images/rice-sauce.jpg" alt="rice-sauce-image">
+                <img class="jollofPic" src="Assets/images/jollof-rice.jpg" alt="jollof-image">
             </div>
         </div>
     </section>
 
     <!-- SECTION CONTAINING THE CONTROLS  -->
     <section class="controls">
-        <button class="banner">Change Banner Background</button>
+        <div>
+            <label for="favcolor">Banner color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ffffff">
+            <button class="banner">Change banner color</button>
+        </div>
 
-        <button class="text">Change Banner Text</button>
+        <div>
+            <input type="text" id="textField" name="text" placeholder="Enter new text">
+            <button class="text">Change Text</button>
+        </div> 
 
-        <button class="image">Change Image</button>
+        <div>
+            <input type="file" id="inputPic" name="myfile">
+            <button class="image">Change Image</button>
+        </div>
 
         <button class="day">Day/Night</button>
     </section>
