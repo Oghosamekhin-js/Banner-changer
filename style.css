@@ -28,7 +28,7 @@ li a{
 .get{
     padding: 0.5rem 2rem;
     border-radius: 5rem;
-    background-color: rgb(172, 117, 15);
+    background-color: #ac502c;
     font-size: 1.5rem;
 }
 /* NAV EDIT ENDS */
@@ -50,11 +50,11 @@ section.one{
     justify-content: space-around; 
     align-items: center; 
     gap: 4rem;
-    border: 1px solid black;
     border-radius: 0.3rem;
     padding: 3rem 0;
     margin-top: 2rem;
     width: 98vw;
+    background-color: #F4F2F3;
 }
 
 h1{

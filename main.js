@@ -9,7 +9,7 @@ changeBannerButton.addEventListener("click", function () {
 
 
 
-// To change texts
+// To change text
 document.addEventListener("DOMContentLoaded", function(){
     const userInput = document.querySelector("#textField");
     const displayText = document.getElementById("displayText");
@@ -56,6 +56,7 @@ const border = document.querySelector(".bannerBox");
 nightButton.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
     border.style.border="1px solid white";
+    border.style.color="black";
 
     if (document.body.classList.contains("dark-mode")) {
 
