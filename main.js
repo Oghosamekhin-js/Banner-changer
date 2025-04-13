@@ -1,67 +1,47 @@
-// To change background color
-const changeBannerButton = document.querySelector(".banner"); 
-const background = document.querySelector(".bannerBox"); 
-
-changeBannerButton.addEventListener("click", function () {
-    const color = document.querySelector("#favcolor").value; 
-    background.style.backgroundColor = color; 
-});
-
-
-
-// To change text
 document.addEventListener("DOMContentLoaded", function(){
+    const title = document.querySelector("#change");
+    const displayText = document.querySelector("#paragraph");
+    const select = document.querySelector("#texts");
     const userInput = document.querySelector("#textField");
-    const displayText = document.getElementById("displayText");
-    const changeTextButton = document.querySelector(".text");
+    const changeBannerButton = document.querySelector(".banner"); 
+    const box1 = document.querySelector('.box1');
+    const uploadInput = document.querySelector('#inputPic');
     
-    changeTextButton.addEventListener("click", function(e){
-        e.preventDefault
-        if (userInput.value.trim() !== "") {
-            displayText.textContent = userInput.value;
-        } else {
-            alert("PLEASE ENTER TEXT!!");
+    changeBannerButton.addEventListener("click", function(e){
+        e.preventDefault();
+        if (userInput.value.trim() === "") {
+            alert('Update your text🫵🏽');
+        } else{
+            if (select.value==='paragraph') {
+                displayText.textContent=userInput.value
+            } 
+    
+            if (select.value==='header') {
+                title.textContent=userInput.value
+            }
         }
+
+          if (uploadInput.files && uploadInput.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              box1.style.backgroundImage = `url('${e.target.result}')`;
+            };
+            reader.readAsDataURL(uploadInput.files[0]);
+          }
     })
+ 
  })
 
+     //  DAY/NIGHT TOGGLE
+     const nightButton = document.querySelector(".day");
+     const background = document.querySelector(".bodycolor"); 
 
-
-// To switch images
-const button = document.querySelector(".image");
-const displayPic = document.querySelector(".jollofPic"); 
-const picInput = document.querySelector("#inputPic");
-
-button.addEventListener("click", function() {
-
-    if (picInput.files && picInput.files[0]) {
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-            displayPic.src = e.target.result;
-        };
-
-        reader.readAsDataURL(picInput.files[0]);
-    } else {
-        alert("Please select a valid picture!");
-    }
-});
+     nightButton.addEventListener("click", function() {
+        background.classList.toggle("dark-mode");
+    
+        console.log(nightButton);
+    });
 
 
 
-// To trigger day/night mode
-const nightButton = document.querySelector(".day");
-const border = document.querySelector(".bannerBox");
 
-nightButton.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    border.style.border="1px solid white";
-    border.style.color="black";
-
-    if (document.body.classList.contains("dark-mode")) {
-
-        border.style.border="1px solid white";
-    } else {
-        border.style.border="1px solid black";
-    }
-});

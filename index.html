@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-rice-banner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="bodycolor">
     <header>
         <nav>
             <ul>
@@ -24,26 +23,22 @@
     <!-- SECTION CONTAINING THE BANNER  -->
     <section class="one">
         <div class="bannerBox">
-            <div class="box1">
-                <h1 class="change">Rice: The Real MVP?</h1>
 
-                <p id="displayText">Rice is great, but it’s even better when turned into legendary dishes: <br>
+            <div class="box1">
+                <div class="overlay"></div>
+
+                <h1 id="change">Rice: The Real MVP?</h1>
+
+                <p id="paragraph">Rice is great, but it’s even better when turned into legendary dishes: <br>
 
                     🔥 Jollof Rice – The spicy, tomato-packed West African icon that starts food wars.<br>
                     🥢 Fried Rice – Stir-fried, soy sauce goodness, perfect for leftovers.<br>
                     🧀 Risotto – The creamy Italian dish that tests your patience but delivers.<br>
-                    🦐 Paella – Spain’s seafood-loaded masterpiece.<br>
                     🌱 Rice & Beans – The timeless, protein-packed power couple.<br>
                     
                     But let’s be real—Jollof Rice reigns supreme. 🍛🔥
-                    </p>
-
-                    <h3>So, how do you like your rice?</h3>
+                </p>
             
-            </div>
-            
-            <div class="box2">
-                <img class="jollofPic" src="Assets/images/jollof-rice.jpg" alt="jollof-picture">
             </div>
         </div>
     </section>
@@ -51,25 +46,27 @@
     <!-- SECTION CONTAINING THE CONTROLS  -->
     <section class="controls">
         <div>
-            <label for="favcolor">Banner color:</label>
-            <input type="color" id="favcolor" name="favcolor" value="#ffffff">
-            <button class="banner" tabindex="0">Change banner color</button>
-        </div>
+                <label for="edit-text">Edit text:</label>
+                <select id="texts" name="texts">
+                  <option value="header">Header</option>
+                  <option value="paragraph">paragraph</option>
+                </select>
 
-        <div>
             <input type="text" id="textField" name="text" placeholder="Enter new text">
-            <button class="text" tabindex="0">Change Text</button>
         </div> 
 
         <div>
             <input type="file" id="inputPic" name="myfile">
-            <button class="image" tabindex="0">Change Image</button>
         </div>
 
+        <button class="banner" tabindex="0">Update banner</button>
+
         <button class="day" tabindex="0">Day/Night</button>
+
+       
     </section>
     
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

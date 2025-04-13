@@ -40,38 +40,58 @@ section.one{
     align-items: center;  
 }
 
-.bannerBox img{
-    height: 50vh;
-    border-radius: 0.3rem;
-}
-
 .bannerBox{
     display: flex;
     justify-content: space-around; 
     align-items: center; 
-    gap: 4rem;
     border-radius: 0.3rem;
     padding: 3rem 0;
     margin-top: 2rem;
     width: 98vw;
-    background-color: #F4F2F3;
+    height: 70vh;
+}
+
+.box1{
+    background-image: url('/Assets/images/jollof-pic.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 98vw;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 0.3rem;
+}
+
+.box1{
+    p, h1 {
+        position: relative;
+        z-index: 100;
+    }
+}
+
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 98vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0.3rem;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 4.2rem;
+    text-align: center;
+    color: white;
 }
 
 p{
     padding: 1rem 0;
-}
-
-h4{
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-}
-
-.rice-sauce-txt{
-    display: none;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(234, 234, 234);
 }
 
 img{
@@ -102,7 +122,7 @@ button{
     background-color: white;
 }
 
-input{
+input, select{
     padding: 0.5rem;
     border-radius: 0.3rem;
     border: 0.1px solid black;
@@ -115,9 +135,13 @@ section.controls div{
 
 .dark-mode {
     background-color: black;
-    color: #ffffff;
-    border-color: #ffffff; 
+    color: white;
 }
+
+.darkmode h1, .darkmode p{
+    color: white;
+}
+
 /* CONTROL SECTION EDIT ENDS */
 
 /* RESPONSIVE DESIGN */
