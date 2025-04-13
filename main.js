@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function(){
             };
             reader.readAsDataURL(uploadInput.files[0]);
           }
+
+          userInput.value = "";
+          uploadInput.value = "";
     })
  
  })

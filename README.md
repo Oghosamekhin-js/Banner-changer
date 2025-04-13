@@ -4,7 +4,7 @@
 **Banner Changer** is an interactive web application that allows users to dynamically update a full-width banner using a form. The banner showcases a description of **Jollof Rice** (a beloved West African dish) and includes:  
 - A background that can be changed  
 - Texts that can be switched  
-- Images that can be switched  
+- Background image that can be changed as well 
 
 This project is built using **HTML, CSS, and JavaScript**, demonstrating the power of DOM manipulation.  
 
@@ -13,9 +13,9 @@ This project is built using **HTML, CSS, and JavaScript**, demonstrating the pow
 ## ✨ Features  
 ✅ **Full-width banner** describing Jollof Rice  
 ✅ **Form controls** to update:  
-   - **Banner background color**  
+   - **Banner background image**  
    - **Banner text content**  
-   - **Banner image**   
+   - **Banner background to day/night mode**   
 ✅ **Responsive design** for different screen sizes  
 
 ---
