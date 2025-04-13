@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
             alert('Update your text🫵🏽');
         } else{
             if (select.value==='paragraph') {
-                displayText.textContent=userInput.value
+                displayText.textContent=userInput.value 
             } 
     
             if (select.value==='header') {
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         }
 
+        // To change/replace background image
           if (uploadInput.files && uploadInput.files[0]) {
             const reader = new FileReader();
             reader.onload = function (e) {
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
             reader.readAsDataURL(uploadInput.files[0]);
           }
 
+        //   To empty-out input fields after banner update
           userInput.value = "";
           uploadInput.value = "";
     })
